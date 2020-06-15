@@ -1,0 +1,26 @@
+#app4 {
+  position: relative;
+}
+@keyframes change {
+  0% {
+    background: green;
+  }
+  50% {
+    background: red;
+  }
+  100% {
+    background: blue;
+  }
+}
+#app4 .circle {
+  position: absolute;
+  border: 1px solid grey;
+  width: 150px;
+  height: 150px;
+  left: 50px;
+  top: 100px;
+  border-radius: 50%;
+}
+#app4 .circle.active {
+  animation: 100ms infinite linear change alternate-reverse;
+}
